@@ -1,4 +1,4 @@
-/* optiom 1
+/* Style the table wrapper to enable horizontal scrolling if necessary */
 .table-wrapper {
     overflow-x: auto;
     max-width: 100%;
@@ -9,29 +9,31 @@
     border-collapse: collapse;
   }
   
+  /* Style for the table cells in the stacked layout */
   .voucher-table th,
   .voucher-table td {
     padding: 0.5rem;
     text-align: left;
     border: 1px solid #ddd;
   }
-   */
-
-/*  option 2
-   @media (max-width: 768px) {
-    .voucher-table, 
-    .voucher-table thead, 
-    .voucher-table tbody, 
-    .voucher-table th, 
-    .voucher-table td, 
+  
+  /* Stack layout for small screens */
+  @media (max-width: 768px) {
+    .voucher-table,
+    .voucher-table thead,
+    .voucher-table tbody,
+    .voucher-table th,
+    .voucher-table td,
     .voucher-table tr {
       display: block;
     }
   
+    /* Hide the table headers */
     .voucher-table thead tr {
-      display: none; 
+      display: none;
     }
   
+    /* Style for the individual cells in stacked layout */
     .voucher-table td {
       position: relative;
       padding-left: 50%;
@@ -39,6 +41,7 @@
       margin-bottom: 0.5rem;
     }
   
+    /* Add labels to each cell */
     .voucher-table td::before {
       content: attr(data-label);
       position: absolute;
@@ -51,6 +54,4 @@
       border-right: 1px solid #ddd;
     }
   }
-   */
-
-   
+  
